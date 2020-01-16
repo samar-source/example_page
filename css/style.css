@@ -6,9 +6,9 @@
 	box-sizing: border-box;
 }
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 html {
 	font-size: 100%;
@@ -21,6 +21,32 @@ body {
 	line-height: 1.05;
 	margin: 0;
 }
+
+/*GitHub*/
+.github {
+	position: fixed;
+	right: 0;
+	top: 100px;
+	z-index: 10000;
+}
+.github-link {
+	display: block;
+	padding: 7px 10px 5px 10px;
+	background-color: #000;
+	border-radius: 10px 0 0 10px;
+	text-align: right;
+	cursor: pointer;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.fa-github {
+	font-size: 2.5rem;
+	color: #fff;
+}
+.github-link:hover {
+	padding-right: 40px;
+}
+
 .page__row_header {
 	background-color: #cccccc;
 }
@@ -92,8 +118,8 @@ body {
 	border: none;
 	font-size: 1.5rem;
 	webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #767676;
+	box-sizing: border-box;
+	color: #767676;
 }
 .button {
 	border: 0;
@@ -110,7 +136,7 @@ body {
 	font-size: 1.5rem;
 	width: 100%;
 	webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 .button:hover {
 	color: #000;
@@ -126,15 +152,15 @@ body {
 	text-align: justify;
 }
 .slider__headline {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 .slider__item {
 	height: 307px;
 	width: 712px;
 	background-position: center center;
 	background-repeat: no-repeat;
-  box-shadow: 0 0 16px 1px rgba(0,0,0,0.17);
-  margin: 17px auto;
+	box-shadow: 0 0 16px 1px rgba(0,0,0,0.17);
+	margin: 17px auto;
 	padding: 10px;
 }
 .slider .owl-dots {
@@ -172,7 +198,7 @@ body {
 	text-align: center;
 	margin-right: 6%;
 	margin-bottom: 2.1875rem;
-  vertical-align: top;
+	vertical-align: top;
 }
 .switching-windows__box {
 	height: 143px;
@@ -231,16 +257,16 @@ body {
 	border: 2px solid #a2a2a2;
 }
 .calculator__input-size:focus::-webkit-input-placeholder {
-  color: transparent;
+	color: transparent;
 }
 .calculator__input-size:focus::-moz-placeholder {
-  color: transparent;
+	color: transparent;
 }
 .calculator__input-size:focus:-moz-placeholder {
-  color: transparent;
+	color: transparent;
 }
 .calculator__input-size:focus:-ms-input-placeholder {
-  color: transparent;
+	color: transparent;
 }
 .multiplication-sign {
 	background: url(../img/calculator/multiplication-sign.png) no-repeat;
@@ -261,7 +287,7 @@ body {
 	-webkit-transform: rotate(-90deg); 
 	transform: rotate(-90deg);
 	font-style: italic;
-}    
+}
 .window-size-width {
 	font-family: 'MyriadProSemibold';
 	left: 5.8125rem;
@@ -326,7 +352,7 @@ body {
 	background-color: #9c9c9c;
 	border-radius:50%;
 	left: -25px;
-  top: 5px;
+	top: 5px;
 	display: none;
 }
 .selection-item__input:checked~label:after {
@@ -334,11 +360,11 @@ body {
 }
 .selection-criterion__list {
 	-webkit-appearance: none;
-	    -moz-appearance: none;
-	    -ms-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
 	font-family: 'MyriadProRegular';
 	max-width: 360px;
-  width: 100%;
+	width: 100%;
 	padding: 0.625rem 1.25rem;
 	border: 2px solid #9c9c9c;
 	border-radius: 10px;
@@ -346,19 +372,19 @@ body {
 	background-color: transparent;
 }
 .selection-criterion__list::-ms-expand {
-  display: none;
+	display: none;
 }
 .selection-criterion__box {
 	position: relative;
 	max-width: 360px;
-  width: 100%;
+	width: 100%;
 }
 .selection-criterion__arrow {
 	width: 0; 
 	height: 0;
-  border-left: 0.75rem solid transparent;
-  border-right: 0.75rem solid transparent;
-  border-top: 1.25rem solid #9c9c9c;
+	border-left: 0.75rem solid transparent;
+	border-right: 0.75rem solid transparent;
+	border-top: 1.25rem solid #9c9c9c;
 	position: absolute;
 	top: 0.875rem;
 	right: 1.25rem;
@@ -375,12 +401,12 @@ body {
 	border: none;
 	font-size: 1.125rem;
 	webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #767676;
-  background: url(../img/calculator/user.png) left center no-repeat #c6c6c6;
-  border: 2px solid #c6c6c6;
-  border-radius: 10px;
-  margin-left: 25px;
+	box-sizing: border-box;
+	color: #767676;
+	background: url(../img/calculator/user.png) left center no-repeat #c6c6c6;
+	border: 2px solid #c6c6c6;
+	border-radius: 10px;
+	margin-left: 25px;
 }
 .calculator__button {
 	background: #9da3d7;
@@ -390,9 +416,9 @@ body {
 	max-width: 280px;
 	width: 100%;
 	webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 10px;
-  margin-left: 25px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-left: 25px;
 }
 #window2, #window3, #window4, #window5, #headline2, #headline3, #headline4, #headline5 {
 	display: none;
@@ -424,21 +450,21 @@ body {
 }
 
 @font-face {
-    font-family: 'MyriadProRegular';
-    src: url('../fonts/MyriadPro-Regular/MyriadProRegular.eot');
-    src: url('../fonts/MyriadPro-Regular/MyriadProRegular.eot') format('embedded-opentype'),
-         url('../fonts/MyriadPro-Regular/MyriadProRegular.woff2') format('woff2'),
-         url('../fonts/MyriadPro-Regular/MyriadProRegular.woff') format('woff'),
-         url('../fonts/MyriadPro-Regular/MyriadProRegular.ttf') format('truetype'),
-         url('../fonts/MyriadPro-Regular/MyriadProRegular.svg#MyriadProRegular') format('svg');
+	font-family: 'MyriadProRegular';
+	src: url('../fonts/MyriadPro-Regular/MyriadProRegular.eot');
+	src: url('../fonts/MyriadPro-Regular/MyriadProRegular.eot') format('embedded-opentype'),
+		url('../fonts/MyriadPro-Regular/MyriadProRegular.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Regular/MyriadProRegular.woff') format('woff'),
+		url('../fonts/MyriadPro-Regular/MyriadProRegular.ttf') format('truetype'),
+		url('../fonts/MyriadPro-Regular/MyriadProRegular.svg#MyriadProRegular') format('svg');
 }
 @font-face {
-    font-family: 'MyriadProSemibold';
-    src: url('../fonts/MyriadPro-Semibold/MyriadProSemibold.eot');
-    src: url('../fonts/MyriadPro-Semibold/MyriadProSemibold.eot') format('embedded-opentype'),
-         url('../fonts/MyriadPro-Semibold/MyriadProSemibold.woff2') format('woff2'),
-         url('../fonts/MyriadPro-Semibold/MyriadProSemibold.woff') format('woff'),
-         url('../fonts/MyriadPro-Semibold/MyriadProSemibold.ttf') format('truetype'),
-         url('../fonts/MyriadPro-Semibold/MyriadProSemibold.svg#MyriadProSemibold') format('svg');
+	font-family: 'MyriadProSemibold';
+	src: url('../fonts/MyriadPro-Semibold/MyriadProSemibold.eot');
+	src: url('../fonts/MyriadPro-Semibold/MyriadProSemibold.eot') format('embedded-opentype'),
+		url('../fonts/MyriadPro-Semibold/MyriadProSemibold.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Semibold/MyriadProSemibold.woff') format('woff'),
+		url('../fonts/MyriadPro-Semibold/MyriadProSemibold.ttf') format('truetype'),
+		url('../fonts/MyriadPro-Semibold/MyriadProSemibold.svg#MyriadProSemibold') format('svg');
 }
 	
