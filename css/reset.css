@@ -79,14 +79,14 @@ time,
 mark,
 audio,
 video {
-    font: inherit;
-    /*font-size: 100%;*/
+	font: inherit;
+	/*font-size: 100%;*/
 
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 		cursor: default;
-    vertical-align: baseline;
-    border: 0;
+	vertical-align: baseline;
+	border: 0;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -101,5 +101,5 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+	display: block;
 }
