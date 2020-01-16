@@ -52,7 +52,7 @@
 	}
 	.form-with-calculator {
 		width: 60%;
-    margin: 0 auto;
+		margin: 0 auto;
 	}
 	.calculator__content_top {
 		position: relative;
@@ -67,7 +67,7 @@
 	.selection-criterion__headline {
 		position: absolute;
 		top: -1.25rem;
-    left: 0;
+		left: 0;
 	}
 	.switching-windows__box {
 		display: none;
