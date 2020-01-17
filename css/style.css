@@ -111,7 +111,7 @@ body {
 	max-width: 290px;
 	margin: 1.5625rem 0.625rem 0;
 }
-.form__field-phone {
+.form__input_phone {
 	display: block;
 	padding: 10px 15px;
 	width: 100%;
