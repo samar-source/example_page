@@ -1,4 +1,78 @@
-$(document).ready(function(){$(".slider").owlCarousel({items:1,loop:!0,nav:!1,autoplay:!1,center:!0,mouseDrag:!0,touchDrag:!0,dots:!0});$(".phone").inputmask({mask:"+7(499) 999-99-99"})});
-function sweetAlertClick(){17===$(".form__input_phone").val().length?(swal("\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e","","success"),form.submit()):swal("\u0417\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u0435 \u0432\u0441\u0435 \u043f\u043e\u043b\u044f","","error")}
-function sweetAlertClickCalculator(){var e=$(".calculator__input-size").val(),b=$("input[name=selection-item]:checked").length,c=$(".selection-criterion__list option:selected").length,d=$(".calculator__field-phone").val();0!=b&&0!=c&&1<e.length&&17===d.length?(swal("\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e","","success"),form.submit()):swal("\u0417\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u0435 \u0432\u0441\u0435 \u043f\u043e\u043b\u044f",
-"","error")}function changeBox(e){for(var b=document.querySelectorAll(".switching-windows__headline"),c=document.querySelectorAll(".calculator__img"),d=document.querySelectorAll(".selection-criterion__headline"),a=0;a<b.length;a++)b[a].id==e?(b[a].style.textDecoration="underline",b[a].style.color="#0099de",c[a].style.display="block",d[a].style.display="block"):(b[a].style.textDecoration="none",b[a].style.color="#000",c[a].style.display="none",d[a].style.display="none")};
+	//Слайдер
+$(document).ready(function(){
+	$('.slider').owlCarousel({
+		items: 1,
+		loop: true,
+		nav: false,
+		autoplay: false,
+		center: true,
+		mouseDrag: true,
+		touchDrag: true,
+		dots: true
+	});
+
+	// Inputmask for phone number in contact
+	$('.phone').inputmask({"mask": "+7(499) 999-99-99"});
+}); 
+
+//Pop-up window for form
+function sweetAlertClick() {
+	var phone = $('.form__input_phone').val();
+	if(phone.length === 17) {
+		swal(
+				'Сообщение отправлено',
+				'',
+				'success'
+			);
+		form.submit();
+	} else {
+		swal(
+				'Заполните все поля',
+				'',
+				'error'
+			);
+	}
+}
+
+//Pop-up window for a calculator with a form
+function sweetAlertClickCalculator() {
+	var size = $('.calculator__input-size').val();
+	var selectItem = $('input[name=selection-item]:checked').length;
+	var selectOption = $('.selection-criterion__list option:selected').length;
+	var phone = $('.calculator__field-phone').val();
+	if(selectItem != 0 && selectOption != 0 && size.length > 1 && phone.length === 17){
+		swal(
+				'Сообщение отправлено',
+				'',
+				'success'
+			);
+			form.submit();
+	} else {
+		swal(
+				'Заполните все поля',
+				'',
+				'error'
+			);
+	}
+}
+
+//Uploading content on the windows
+function changeBox(winLink) {
+	var windowLink = document.querySelectorAll('.switching-windows__headline');
+	var windowImg = document.querySelectorAll('.calculator__img');
+	var windowTitle = document.querySelectorAll('.selection-criterion__headline');
+
+	for (var i = 0; i < windowLink.length; i++) {
+		if (windowLink[i].id == winLink) {
+			windowLink[i].style.textDecoration = 'underline';
+			windowLink[i].style.color = '#0099de';
+			windowImg[i].style.display = 'block';
+			windowTitle[i].style.display = 'block';
+		} else {
+			windowLink[i].style.textDecoration = 'none';
+			windowLink[i].style.color = '#000';
+			windowImg[i].style.display = 'none';
+			windowTitle[i].style.display = 'none';
+		}
+	}
+}
