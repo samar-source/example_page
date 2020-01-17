@@ -12,7 +12,16 @@
 	<link rel="stylesheet" type="text/css" href="lib/owlcarousel/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<title>Тестовое задание</title>
+	<title>Just a page</title>
+
+
+
+	<!-- УДАЛИТЬ    для планина live reload -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?LR-verbose&snipver=1&LiveTest=1"></' + 'script>')</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35730/livereload.js?LR-verbose&snipver=1&LiveTest=1"></' + 'script>')</script>
+<!-- УДАЛИТЬ    для плпгина live reload -->
+
+
 </head>
 <body class="page">
 
@@ -46,7 +55,7 @@
 				<form class="form form-with-button" action="somephp.php" method="post">
 					<h2 class="headline form__headline">оставь телефон и получи что&#8209;то&#160;офигенное</h2>
 					<div class="form__box">
-						<input class="form__field-phone phone" required type="text" placeholder="Введите номер">
+						<input class="form__input_phone phone" id="phone" name="phone" required type="text" placeholder="Введите номер">
 						<button class="form__button button" onclick="sweetAlertClick()" type="button">Получить</button>
 					</div>
 				</form>
@@ -157,7 +166,7 @@
 						</div>
 						<!-- Form bottom part -->
 						<div class="calculator__content_bottom">
-							<input class="calculator__field-phone phone" type="text" placeholder="Введите номер">
+							<input class="calculator__field-phone phone" id="phone" name="phone" required type="text" placeholder="Введите номер">
 							<button onclick="sweetAlertClickCalculator()" class="calculator__button button" type="button">Получить</button>
 						</div>
 					</div>
@@ -179,7 +188,7 @@
 
 <!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script type="text/javascript" src="lib/maskedinput/jquery.maskedinput.min.js"></script>
+		<script src="lib/inputmask/jquery.inputmask.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="lib/sweetalert/sweetalert.min.js"></script>
 		<script type="text/javascript" src="lib/owlcarousel/owl.carousel.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
