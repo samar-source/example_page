@@ -1,196 +1,201 @@
-﻿<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-	<script src="https://kit.fontawesome.com/97e532c090.js" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" type="text/css" href="lib/owlcarousel/owl.carousel.min.css">
+	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<title>Just a page</title>
-
-
-
-	<!-- УДАЛИТЬ    для планина live reload -->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?LR-verbose&snipver=1&LiveTest=1"></' + 'script>')</script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35730/livereload.js?LR-verbose&snipver=1&LiveTest=1"></' + 'script>')</script>
-<!-- УДАЛИТЬ    для плпгина live reload -->
-
-
 </head>
-<body class="page">
+<body>
 
-<!-- GitHub -->
-	<div class="github">
-		<a href="https://github.com/samar-source/example_page.git" target="_blank" class="github-link">
-			<i class="fab fa-github"></i>
-		</a>
-	</div>
-
-<!-- Header -->
-	<div class="page__row page__row_header">
-		<div class="page__cell">
-			<header class="header clearfix">
-				<div class="header__logo">
-					<img src="img/logo/logo.png" style="width: 270px; height: 100px;" alt="Название  компании. Самая клевая компания" class="logo__img">
-				</div>
-				<div class="header__phone-number">
-					<a href="tel:+74997777777" class="phone-number text-decoration-none">+7(499)&#160;777-77-77</a>
-					<a href="tel:+74997777777" class="phone-number text-decoration-none">+7(499)&#160;777-77-77</a>
-				</div>
-			</header>
-		</div>
-	</div>
-
-<!-- Block with form -->
-	<div class="page__row page__row_circles-bg">
-		<div class="page__cell page__cell_with-margin">
-			<section class="section section-with-form">
-				<h2 class="headline section-with-form__headline">Форма с&#160;кнопкой</h2>
-				<form class="form form-with-button" action="somephp.php" method="post">
-					<h2 class="headline form__headline">оставь телефон и получи что&#8209;то&#160;офигенное</h2>
-					<div class="form__box">
-						<input class="form__input_phone phone" id="phone" name="phone" required type="text" placeholder="Введите номер">
-						<button class="form__button button" onclick="sweetAlertClick()" type="button">Получить</button>
-					</div>
-				</form>
-			</section>
-		</div>
-	</div>
-
-<!-- Block with slider -->
-	<div class="page__row">
-		<section class="section section__slider">
-			<h2 class="headline slider__headline">Тут у&#160;нас слайдер</h2>
-			<div class="owl-carousel slider">
-				<div class="slider__item" style="background-image: url(img/slider/slide-1.png);"></div>
-				<div class="slider__item" style="background-image: url(img/slider/slide-2.png);"></div>
-				<div class="slider__item" style="background-image: url(img/slider/slide-3.png);"></div>
+<!-- F1_header -->
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<img src="img/F1_header/logo.png" alt="Название компании. Самая клевая компания" class="logo__img" width="270" height="100">
 			</div>
-		</section>
-	</div>
-
-<!-- Block with calculator -->
-	<div class="page__row">
-		<div class="page__cell">
-			<!-- Section with text -->
-			<section class="section">
-				<h2 class="headline headline_text-black">Просто текстовый блок</h2>
-				<p class="page__text_justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere quis arcu sit amet commodo. Nullam ac&#160;dui lacus. Nulla dapibus interdum interdum. Curabitur ut&#160;diam nisl. Vivamus libero lacus, viverra at&#160;dolor sit amet, commodo faucibus orci. Vivamus laoreet ornare nisi, id&#160;pharetra tellus ullamcorper volutpat. Sed lacinia placerat accumsan. Praesent pharetra ipsum scelerisque, sodales urna&#160;ut, placerat nulla. Duis nunc urna, semper non arcu&#160;ut, sagittis dapibus lorem. Nunc nec urna id&#160;velit sodales sodales. Sed porttitor quam eget mollis consequat. Curabitur aliquet nec dui eget aliquet. Nulla in&#160;risus ante.</p>
-			</section>
-			<!-- Section with calculator -->
-			<section class="section">
-				<h2 class="headline">Калькулятор<br>(стоимость пользователь узнает по&#160;телефону)</h2>
-				<!-- Menu for windows -->
-				<div class="switching-windows">
-					<div class="switching-windows__item">
-						<div class="switching-windows__box"><img src="img/windows/window-1.png" width="58" height="91" alt="window-1" class="switching-windows__img"></div>
-						<a onclick="changeBox('link1'); return false" class="switching-windows__headline" id="link1" href="#">Одностворчатое</a>
-					</div>
-					<div class="switching-windows__item">
-						<div class="switching-windows__box"><img src="img/windows/window-2.png" width="107" height="91" alt="window-2" class="switching-windows__img"></div>
-						<a onclick="changeBox('link2'); return false" class="switching-windows__headline" id="link2" href="#">Двухстворчатое</a>
-					</div>
-					<div class="switching-windows__item">
-						<div class="switching-windows__box"><img src="img/windows/window-3.png" width="160" height="91" alt="window-3" class="switching-windows__img"></div>
-						<a onclick="changeBox('link3'); return false" class="switching-windows__headline" id="link3" href="#">Трехстворчатое</a>
-					</div>
-					<div class="switching-windows__item">
-						<div class="switching-windows__box"><img src="img/windows/window-4.png" width="173" height="140" alt="window-4" class="switching-windows__img"></div>
-						<a onclick="changeBox('link4'); return false" class="switching-windows__headline" id="link4" href="#">Балконный блок</a>
-					</div>
-					<div class="switching-windows__item">
-						<div class="switching-windows__box"><img src="img/windows/window-5.png" width="167" height="140" alt="window-5" class="switching-windows__img"></div>
-						<a onclick="changeBox('link5'); return false" class="switching-windows__headline" id="link5" href="#">Остекление балкона</a>
-					</div>
-				</div>
-				<!-- Form -->
-				<form class="form form-with-calculator">
-					<div>
-						<div class="calculator__content_top clearfix">
-							<!-- Form left part -->
-							<div class="calculator__window-size">
-								<p class="window-size window-size-width">ширина</p>
-								<p class="window-size window-size-height">высота</p>
-								<div class="window-size__box">
-									<img src="img/windows/window-1.png" alt="window-1" id="window1" class="calculator__img">
-									<img src="img/windows/window-2.png" alt="window-2" id="window2" class="calculator__img">
-									<img src="img/windows/window-3.png" alt="window-3" id="window3" class="calculator__img">
-									<img src="img/windows/window-4.png" alt="window-4" id="window4" class="calculator__img">
-									<img src="img/windows/window-5.png" alt="window-5" id="window5" class="calculator__img">
-								</div>
-								<div class="calculator__input-box-size">
-									<p>ширина,&#160;см<br><input class="calculator__input-size" type="text" placeholder="120"></p>
-									<span class="multiplication-sign"></span>
-									<p>высота,&#160;см<br><input class="calculator__input-size" type="text" placeholder="120"></p>
-								</div>
-							</div>
-							<!-- Form rigth part -->
-							<div class="calculator__selection-criterion">
-								<h2 class="selection-criterion__headline" id="headline1">Одностворчатое окно&#160;KBE</h2>
-								<h2 class="selection-criterion__headline" id="headline2">Двухстворчатое окно&#160;KBE</h2>
-								<h2 class="selection-criterion__headline" id="headline3">Трехстворчатое окно&#160;KBE</h2>
-								<h2 class="selection-criterion__headline" id="headline4">Балконный блок&#160;KBE</h2>
-								<h2 class="selection-criterion__headline" id="headline5">Остекление балкона&#160;KBE</h2>
-								<div class="selection-criterion__item">
-									<p class="selection-criterion__item-name">1.&#160;Критерий выбора</p>
-									<div class="selection-item">
-										<input type="radio" class="selection-item__input" id="item1" name="selection-item" value="item1">
-										<label for="item1"> пункт выбора&#160;1</label>
-									</div>
-									<div class="selection-item">
-										<input type="radio" class="selection-item__input" id="item2" name="selection-item" value="item2">
-										<label for="item2"> пункт выбора&#160;2</label>
-									</div>
-									<div class="selection-item">
-										<input type="radio" class="selection-item__input" id="item3" name="selection-item" value="item3">
-										<label for="item3"  style="margin-right: 0;"> пункт выбора&#160;3</label>
-									</div>
-								</div>
-								<div class="selection-criterion__item selection-criterion__item-with-list">
-									<p class="selection-criterion__item-name">2.&#160;Выберите открывание створки</p>
-									<div class="selection-criterion__box">
-										<select class="selection-criterion__list" name="select">
-											<option value="not-open">Не&#160;открывается</option>
-											<option value="open">Открывается</option>
-										</select>
-										<div class="selection-criterion__arrow"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Form bottom part -->
-						<div class="calculator__content_bottom">
-							<input class="calculator__field-phone phone" id="phone" name="phone" required type="text" placeholder="Введите номер">
-							<button onclick="sweetAlertClickCalculator()" class="calculator__button button" type="button">Получить</button>
-						</div>
-					</div>
-				</form>
-			</section>
+			<div class="phone-number">
+				<a href="tel:+74997777777" class="phone-number__item">+7(499)&#160;777-77-77</a>
+				<a href="tel:+74997777777" class="phone-number__item">+7(499)&#160;777-77-77</a>
+			</div>
 		</div>
-	</div>
+	</header>
+
+<!-- F2_block_with_form -->
+	<section class="section section-with-form">
+		<div class="container">
+			<div class="content">
+				<h2 class="title">Форма с&#160;кнопкой</h2>
+				<form action="somephp.php" method="post" name="contactForm" class="form" id="form" onsubmit="return validate()">
+					<h2 class="form__heading">Оставь телефон и&nbsp;получи что&#8209;то офигенное</h2>
+					<input class="form__input phone" id="phone" name="phone" required type="text" minlength="7" placeholder="Введите номер">
+					<button class="form__button button">Получить</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+<!-- F3_block_with_slider -->
+	<section class="section section-with-slider">
+		<div class="container">
+			<div class="content">
+				<h2 class="title">Тут у&#160;нас слайдер</h2>
+				<div class="slider">
+					<img src="img/F3_slider/slide-1.png" alt="Слайд 1" class="slider__item">
+					<img src="img/F3_slider/slide-2.png" alt="Слайд 2" class="slider__item">
+					<img src="img/F3_slider/slide-3.png" alt="Слайд 3" class="slider__item">
+				</div>
+				<div class="slider-dots">
+					<span class="slider-dots__item" onclick="currentSlide(1)"><span></span></span> 
+					<span class="slider-dots__item" onclick="currentSlide(2)"><span></span></span> 
+					<span class="slider-dots__item" onclick="currentSlide(3)"><span></span></span> 
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- F4_block_with_text -->
+	<section class="section section-with-text">
+		<div class="container">
+			<div class="content">
+				<h2 class="title">Просто текстовый блок</h2>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere quis arcu sit amet commodo. Nullam ac&#160;dui lacus. Nulla dapibus interdum interdum. Curabitur ut&#160;diam nisl. Vivamus libero lacus, viverra at&#160;dolor sit amet, commodo faucibus orci. Vivamus laoreet ornare nisi, id&#160;pharetra tellus ullamcorper volutpat. Sed lacinia placerat accumsan. Praesent pharetra ipsum scelerisque, sodales urna&#160;ut, placerat nulla. Duis nunc urna, semper non arcu&#160;ut, sagittis dapibus lorem. Nunc nec urna id&#160;velit sodales sodales. Sed porttitor quam eget mollis consequat. Curabitur aliquet nec dui eget aliquet. Nulla in&#160;risus ante.</p>
+			</div>
+		</div>
+	</section>
+
+<!-- F5_block_with_calculator -->
+	<section class="section section-with-calculator">
+		<div class="container">
+			<div class="content">
+				<h2 class="title">Калькулятор<br>(стоимость пользователь узнает по&#160;телефону)</h2>
+				<div class="windows">
+					<ul class="windows__list">
+						<li class="windows__item">
+							<a onclick="changeBox('single-leaf'); return false" class="windows__link" id="single-leaf" href="#">
+								<div class="windows__img-wrapper">
+									<img src="img/F5-calculator/windows/single-leaf.png" width="58" height="91" alt="Одностворчатое окно" class="windows__img">
+								</div>
+								Одностворчатое
+							</a>
+						</li>
+						<li class="windows__item">
+							<a onclick="changeBox('double-leaf'); return false" class="windows__link" id="double-leaf" href="#">
+								<div class="windows__img-wrapper">
+									<img src="img/F5-calculator/windows/double-leaf.png" width="107" height="91" alt="Двухстворчатое окно" class="windows__img">
+								</div>
+								Двухстворчатое
+							</a>
+						</li>
+						<li class="windows__item">
+							<a onclick="changeBox('three-leaf'); return false" class="windows__link" id="three-leaf" href="#">
+								<div class="windows__img-wrapper">
+									<img src="img/F5-calculator/windows/three-leaf.png" width="160" height="91" alt="Трехстворчатое окно" class="windows__img">
+								</div>
+								Трехстворчатое
+							</a>
+						</li>
+						<li class="windows__item">
+							<a onclick="changeBox('balcony-block'); return false" class="windows__link" id="balcony-block" href="#">
+								<div class="windows__img-wrapper">
+									<img src="img/F5-calculator/windows/balcony-block.png" width="173" height="140" alt="Балконный блок" class="windows__img">
+								</div>
+								Балконный блок
+							</a>
+						</li>
+						<li class="windows__item">
+							<a onclick="changeBox('glazing-balconies'); return false" class="windows__link" id="glazing-balconies" href="#">
+								<div class="windows__img-wrapper">
+									<img src="img/F5-calculator/windows/glazing-balconies.png" width="167" height="140" alt="Остекление балкона" class="windows__img">
+								</div>
+								Остекление балкона
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="calculator-wrapper">
+					<form action="somephp.php" method="post" name="calculator" class="calculator">
+						<div class="select-window">
+							<div class="select-window__img-wrapper img-wrapper">
+								<img src="img/F5-calculator/windows/single-leaf.png" alt="Одностворчатое окно" id="single-leaf-img" class="img-wrapper__img" width="auto" height="165">
+								<img src="img/F5-calculator/windows/double-leaf.png" alt="Двухстворчатое окно" id="double-leaf-img" class="img-wrapper__img" width="auto" height="165">
+								<img src="img/F5-calculator/windows/three-leaf.png" alt="Трехстворчатое окно" id="three-leaf-img" class="img-wrapper__img" width="190" height="auto">
+								<img src="img/F5-calculator/windows/balcony-block.png" alt="Балконный блок" id="balcony-block-img" class="img-wrapper__img" width="auto" height="165">
+								<img src="img/F5-calculator/windows/glazing-balconies.png" alt="Остекление балкона" id="glazing-balconies-img" class="img-wrapper__img" width="auto" height="165">
+								<span class="img-wrapper__size width">Ширина</span>
+								<span class="img-wrapper__size height">Высота</span>
+							</div>
+							<div class="select-window__size size">
+								<div class="size__item">
+									<input class="size__input" type="text" name="size-width" placeholder="120">
+									<label class="size__label" for="size-width">ширина,&#160;см</label>
+								</div>
+								<span class="size__icon"></span>
+								<div class="size__item">
+									<input class="size__input" type="text" name="size-height" placeholder="120">
+									<label class="size__label" for="size-height">высота,&#160;см</label>
+								</div>
+							</div>
+						</div>
+						<div class="parameters">
+							<h3 class="parameters__headline" id="single">Одностворчатое окно&#160;KBE</h3>
+							<h3 class="parameters__headline" id="double">Двухстворчатое окно&#160;KBE</h3>
+							<h3 class="parameters__headline" id="three">Трехстворчатое окно&#160;KBE</h3>
+							<h3 class="parameters__headline" id="balcony">Балконный блок&#160;KBE</h3>
+							<h3 class="parameters__headline" id="glazing-balc">Остекление балкона&#160;KBE</h3>
+							<div class="parameters__block criterion">
+								<ol class="criterion__list">
+									<li class="criterion__item criterion-item radio-box">
+										<h4 class="radio-box__caption criterion-item__caption">Критерий выбора</h4>
+										<ul class="radio-box__list dot__list">
+											<li class="dot__item dot-item">
+												<input type="radio" class="dot-item__input" id="item-1" name="selection-item" value="item-1">
+												<label for="item-1" class="dot-item__label"> пункт выбора&#160;1</label>
+											</li>
+											<li class="dot__item dot-item">
+												<input type="radio" class="dot-item__input" id="item-2" name="selection-item" value="item-2">
+												<label for="item-2" class="dot-item__label"> пункт выбора&#160;2</label>
+											</li>
+											<li class="dot__item dot-item">
+												<input type="radio" class="dot-item__input" id="item-3" name="selection-item" value="item-3">
+												<label for="item-3" class="dot-item__label"> пункт выбора&#160;3</label>
+											</li>
+										</ul>
+									</li>
+									<li class="criterion__item criterion-item select-box">
+										<h4 class="select-box__caption criterion-item__caption">Выберите открывание створки</h4>
+										<div class="select-box__element">
+											<select class="select-box__list" name="select">
+												<option class="select-box__item" value="not-open">Не&#160;открывается</option>
+												<option class="select-box__item" value="open">Открывается</option>
+											</select>
+										<div class="select-box__arrow"></div>
+									</div>
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div class="get-calculation">
+							<input class="get-calculation__input phone" id="calculator-phone" name="calculator-phone" required type="text" onkeyup="this.value = this.value.replace (/[^0-9+ -]/, '')" minlength="7" placeholder="Введите номер">
+							<button class="get-calculation____button button" onclick="showAlert(document.getElementById('calculator-phone').value)">Рассчитать</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <!-- Footer -->
-	<div class="page__row page__row_footer">
-		<div class="page__cell">
-			<footer class="footer">
-				<div class="footer__copyright">
-						просто<br>скромный футер
-				</div>
-			</footer>
+	<footer class="footer">
+		<div class="container">
+			<p class="footer-text">Просто скромный футер</p>
 		</div>
-	</div>
+	</footer>
 
-<!-- Scripts -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="lib/inputmask/jquery.inputmask.min.js" type="text/javascript"></script>
-		<script type="text/javascript" src="lib/sweetalert/sweetalert.min.js"></script>
-		<script type="text/javascript" src="lib/owlcarousel/owl.carousel.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
